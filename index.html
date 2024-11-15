@@ -9,36 +9,39 @@
  <style>
   @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
   body {
-   background-color: rgb(40, 40, 40);
+   background-color: black;
    color: white;
    text-align: center;
    font-family: 'Cutive Mono', monospace;
+   font-size: 24px;
   }
   img {
-   width: auto;
-   height: 30vw;
+   height: 100vh;
   }
-  @media only screen and (max-width: 415px) {
-   img {
-    height: 100vw;
-   }
+  ul {
+   list-style-type: none;
+  }
+  a {
+   text-decoration: none;
   }
  </style>
 </head>
 <body>
- <div class="container">
-  <header>
-   <h3 class="fw-normal m-2">Bem-vindo a'meu Carnaval!</h3>
-   <p class="m-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero eaque, ab reprehenderit autem ad aspernatur hic aut architecto pariatur dolor dolore labore beatae perspiciatis commodi, incidunt voluptate? Et, deserunt repellendus.</p>
-  </header>
-  <main>
-   <h4>Francisco de Goya</h4>
-   <h5>(1746 - 1828)</h5>
-   <div class="gallery">
-    <img src="./www/Assets/Images/interpretacoes/quadros/francisco_de_goya/Ascensión_de_la_Virgen_y_San_Íñigo.jpg" alt="Ascensión_de_la_Virgen_y_San_Íñigo">
-   </div>
-  </main>
- </div>
+ <header>
+  <div class="container">
+   <h3 class="m-5">Bem-vindo a'meu Carnaval!</h3>
+  </div>
+ </header>
+ <main>
+  <div class="container">
+   <p class="mb-5 fst-italic text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore tempora tenetur veritatis cum unde accusamus ducimus, corporis facilis sint autem voluptas nemo eligendi, voluptatum at iure, vel culpa repellat fugit.</p>
+   <ul>
+    <li class="mb-5 text-start">
+     <a style="color: #808000;" href="./www/Views/Pages/francisco_de_goya.html">Francisco de Goya ................... Francisco José de Goya y Lucientes (1746 - 1828)</a>
+    </li>
+   </ul>
+  </div>
+ </main>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
