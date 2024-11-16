@@ -1463,11 +1463,27 @@ if (typeof jQuery === 'undefined') {
       .css(isHorizontal ? 'top' : 'left', '')
   }
 
+  Tooltip.prototype.escapeHtml = function (string) {
+    var entityMap = {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;',
+      '/': '&#x2F;',
+      '`': '&#x60;',
+      '=': '&#x3D;'
+    };
+    return String(string).replace(/[&<>"'`=\/]/g, function (s) {
+      return entityMap[s];
+    });
+  };
+
   Tooltip.prototype.setContent = function () {
     var $tip  = this.tip()
     var title = this.getTitle()
 
-    $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title)
+    $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](this.options.html ? title : this.escapeHtml(title))
     $tip.removeClass('fade in top bottom left right')
   }
 
