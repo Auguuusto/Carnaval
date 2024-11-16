@@ -9,4 +9,5 @@ Baseado no [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
-- Pinturas de 1763 a 1774
+- Pinturas de 1763 a 1774.
+- Responsividade mobile aprimorada.
