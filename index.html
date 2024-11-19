@@ -24,9 +24,24 @@
   a {
    text-decoration: none;
   }
+  .container ul li {
+   text-align: start;
+  }
+  .container ul {
+   padding: 0;
+   margin: 0;
+  }
   @media screen and (max-width: 800px) {
    body {
-    font-size: 12px;
+    font-size: 18px;
+   }
+  }
+  @media screen and (max-width: 1400px) {
+   .pseudonimo {
+    display: none;
+   }
+   .container ul li {
+    text-align: center;
    }
   }
  </style>
@@ -41,14 +56,11 @@
   <div class="container">
    <p class="mb-5 fst-italic text-secondary">„Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore tempora tenetur veritatis cum unde accusamus ducimus, corporis facilis sint autem voluptas nemo eligendi, voluptatum at iure, vel culpa repellat fugit.“</p>
    <ul>
-    <li class="mb-5 text-start">
-     <a style="color: #808000;" href="./www/Views/Pages/Francisco-de-Goya/francisco-de-goya.html">Francisco de Goya ................... Francisco José de Goya y Lucientes (1746 - 1828)</a>
+    <li class="mb-5">
+     <a style="color: #808000;" href="./www/Views/Pages/Francisco-de-Goya/francisco-de-goya.html"><span class="pseudonimo">Francisco de Goya ................... </span>Francisco José de Goya y Lucientes (1746 - 1828)</a>
     </li>
-    <li class="mb-5 text-start">
-     <a style="color: #808000;" href="./www/Views/Pages/Yuko-Tatsushima/yuko-tatsushima.html">Yuko Tatsushima ............................................... Yuko Tatsushima (1974)</a>
-    </li>
-    <li class="mb-5 text-start">
-     <a style="color: #808000;" href="./www/Views/Pages/fernando_pessoa.html">Fernando Pessoa .............................. Fernando António Nogueira Pessoa (1888)</a>
+    <li class="mb-5">
+     <a style="color: #808000;" href="./www/Views/Pages/Yuko-Tatsushima/yuko-tatsushima.html"><span class="pseudonimo">Yuko Tatsushima ............................................... </span> Yuko Tatsushima (1974)</a>
     </li>
    </ul>
   </div>
